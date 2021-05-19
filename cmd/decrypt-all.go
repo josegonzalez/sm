@@ -70,6 +70,7 @@ func worker(workCh chan string, wg *sync.WaitGroup) {
 			message, err := ioutil.ReadFile(fmt.Sprintf("%s.sm", file))
 			if err != nil {
 				log.Printf("failed to read:%s", err.Error)
+				continue
 			}
 
 			success := false
