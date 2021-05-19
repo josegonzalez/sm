@@ -9,9 +9,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/agilebits/sm/secrets"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
+	"sm/secrets"
 )
 
 // encryptCmd represents the encrypt command

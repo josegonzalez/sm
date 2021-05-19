@@ -7,8 +7,8 @@ import (
 	"log"
 	"sync"
 
-	"github.com/agilebits/sm/secrets"
 	"github.com/spf13/cobra"
+	"sm/secrets"
 )
 
 // encryptAllCmd represents the encrypt-all command

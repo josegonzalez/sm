@@ -6,8 +6,8 @@ import (
 	"os"
 	"sync"
 
-	"github.com/agilebits/sm/secrets"
 	"github.com/spf13/cobra"
+	"sm/secrets"
 )
 
 // shredCmd represents the shred command
