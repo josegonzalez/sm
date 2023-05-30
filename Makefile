@@ -1,7 +1,7 @@
 GH_USER ?= agilebits
 NAME = sm
 HARDWARE = $(shell uname -m)
-VERSION ?= 0.8.1
+VERSION ?= 0.9.0
 
 GOOS ?= darwin
 
