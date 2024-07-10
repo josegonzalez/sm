@@ -3,7 +3,7 @@ module sm
 go 1.20
 
 require (
-	github.com/aws/aws-sdk-go-v2 v1.30.1
+	github.com/aws/aws-sdk-go-v2 v1.30.2
 	github.com/aws/aws-sdk-go-v2/config v1.27.24
 	github.com/aws/aws-sdk-go-v2/service/kms v1.35.1
 	github.com/pkg/errors v0.9.1
