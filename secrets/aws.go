@@ -31,7 +31,7 @@ func NewAwsKeyService(region string, masterKeyID string) *AwsKeyService {
 }
 
 func awsSession(region string) (aws.Config, error) {
-	return config.LoadDefaultConfig(context.TODO(), config.WithRegion(region))
+	return config.LoadDefaultConfig(context.TODO(), config.WithRegion(region), config.WithSharedConfigProfile(""))
 }
 
 func (s *AwsKeyService) setup() error {
