@@ -5,12 +5,12 @@ name: "tagged-release"
 on:
   push:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   tagged-release:
     name: tagged-release
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,7 @@ jobs:
       - name: Set up Go 1.16
         uses: actions/setup-go@v5
         with:
-          go-version-file: 'go.mod'
+          go-version-file: "go.mod"
 
       - name: Create Release Artifacts
         run: make create-release-artifacts
