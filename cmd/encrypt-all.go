@@ -16,7 +16,7 @@ import (
 var encryptAllCmd = &cobra.Command{
 	Use:   "encrypt-all",
 	Short: "Encrypt all files in manifest using key management system",
-	Long: `This command will re-encrypt all changed files in the .sm/manifest.
+	Long: `This command will re-encrypt all changed files in the manifest.
 
 It requires access to the same key management system (KMS) that was used for the initial
 encryption. The key will be extracted from the existing encrypted file. If an unencrypted file
@@ -28,7 +28,7 @@ For example:
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		lines, err := secrets.ReadManifest("./.sm/manifest")
+		lines, err := secrets.ReadManifest(manifestFile)
 		if err != nil {
 			log.Fatal("error reading manifest:", err)
 		}

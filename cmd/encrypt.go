@@ -74,10 +74,9 @@ func encryptSecret(env string, region string, masterKeyID string, message []byte
 		w.Flush()
 		fmt.Println(fmt.Sprintf("output written to %s", out))
 
-		manifest := "./.sm/manifest"
 		unencryptedFile := strings.TrimSuffix(out, ".sm")
-		if _, err := os.Stat(manifest); !os.IsNotExist(err) {
-			err = secrets.EnsureInManifest(manifest, unencryptedFile)
+		if _, err := os.Stat(manifestFile); !os.IsNotExist(err) {
+			err = secrets.EnsureInManifest(manifestFile, unencryptedFile)
 			if err != nil {
 				log.Fatal("failed to update manifest", err)
 			}

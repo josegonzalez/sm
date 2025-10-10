@@ -15,7 +15,7 @@ import (
 var shredCmd = &cobra.Command{
 	Use:   "shred",
 	Short: "Shred all files listed in the manifest",
-	Long: `This command will remove all files in the .sm/manifest.
+	Long: `This command will remove all files in the manifest.
 
 For example:
 
@@ -23,7 +23,7 @@ For example:
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		lines, err := secrets.ReadManifest("./.sm/manifest")
+		lines, err := secrets.ReadManifest(manifestFile)
 		if err != nil {
 			log.Fatal("error reading manifest:", err)
 		}
