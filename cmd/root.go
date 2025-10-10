@@ -59,8 +59,8 @@ var out string
 func init() {
 	cobra.OnInitialize(initConfig)
 	RootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.sm/config.yaml)")
+	RootCmd.PersistentFlags().StringVar(&manifestFile, "manifest", "./.sm/manifest", "path to the manifest file")
 	RootCmd.Flags().BoolVarP(&v, "version", "v", false, "display version")
-	RootCmd.Flags().StringVar(&manifestFile, "manifest", "./.sm/manifest", "path to the manifest file")
 }
 
 // initConfig reads in config file and ENV variables if set.
