@@ -20,7 +20,7 @@ const defaultWorkerCount = 25
 var decryptAllCmd = &cobra.Command{
 	Use:   "decrypt-all",
 	Short: "Decrypt all files in manifest using key management system",
-	Long: `This command will decrypt all files in the .sm/manifest.
+	Long: `This command will decrypt all files in the manifest.
 
 It requires access to the same key management system (KMS) that was used for encryption.
 
@@ -30,7 +30,7 @@ For example:
 
 `,
 	Run: func(cmd *cobra.Command, args []string) {
-		lines, err := secrets.ReadManifest("./.sm/manifest")
+		lines, err := secrets.ReadManifest(manifestFile)
 		if err != nil {
 			log.Fatal("error reading manifest:", err)
 		}
