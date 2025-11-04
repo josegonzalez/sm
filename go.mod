@@ -5,7 +5,7 @@ go 1.23.0
 require (
 	github.com/aws/aws-sdk-go-v2 v1.39.6
 	github.com/aws/aws-sdk-go-v2/config v1.31.16
-	github.com/aws/aws-sdk-go-v2/service/kms v1.47.0
+	github.com/aws/aws-sdk-go-v2/service/kms v1.47.1
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.10.1
 	github.com/spf13/viper v1.21.0
@@ -14,8 +14,8 @@ require (
 require (
 	github.com/aws/aws-sdk-go-v2/credentials v1.18.20 // indirect
 	github.com/aws/aws-sdk-go-v2/feature/ec2/imds v1.18.12 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.12 // indirect
-	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.12 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/configsources v1.4.13 // indirect
+	github.com/aws/aws-sdk-go-v2/internal/endpoints/v2 v2.7.13 // indirect
 	github.com/aws/aws-sdk-go-v2/internal/ini v1.8.4 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/accept-encoding v1.13.2 // indirect
 	github.com/aws/aws-sdk-go-v2/service/internal/presigned-url v1.13.12 // indirect
